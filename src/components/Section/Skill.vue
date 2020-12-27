@@ -166,11 +166,11 @@ export default {
       right: 0;
       top: -25px;
       cursor: pointer;
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         font-size: 13px;
       }
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       margin-top: 10px;
     }
   }
@@ -206,7 +206,7 @@ export default {
       font-size: 40px;
       letter-spacing: 3px;
       border-bottom: 5px solid #1c86f2;
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         font-size: 25px;
       }
     }
@@ -230,26 +230,30 @@ export default {
         cursor: auto;
       }
 
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         font-size: 13px;
       }
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     .graph-menu {
       ul {
-        max-height: 20vh;
         overflow-y: scroll;
         li {
           font-size: 10px;
         }
+        @include media-breakpoint-down(sm) {
+          max-height: 20vh;
+        }
       }
     }
 
-    .graph-content {
-      margin-top: 35px;
-      padding-bottom: 5vh;
+    @include media-breakpoint-down(sm) {
+      .graph-content {
+        margin-top: 35px;
+        padding-bottom: 5vh;
+      }
     }
   }
 }
