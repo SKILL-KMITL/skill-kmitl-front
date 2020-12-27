@@ -22,7 +22,7 @@
 export default {};
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .introduct-section {
   position: relative;
 
@@ -46,6 +46,9 @@ export default {};
       margin: 0;
       margin-right: 15px;
       font-size: 13px;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
 
     img {
@@ -71,6 +74,10 @@ export default {};
       font-size: 5vw;
       letter-spacing: 3px;
       border-bottom: 5px solid #1c86f2;
+
+      @include media-breakpoint-down(md) {
+        font-size: 30px;
+      }
     }
 
     span {
@@ -80,6 +87,9 @@ export default {};
       color: #e9e9e9;
       font-size: 20px;
       width: 45vw;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
     }
   }
 }

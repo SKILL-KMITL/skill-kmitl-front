@@ -7,7 +7,7 @@
 
 <script></script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .body-container {
   min-height: 100vh;
   position: relative;

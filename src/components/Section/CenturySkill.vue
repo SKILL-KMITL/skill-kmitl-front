@@ -4,12 +4,12 @@
       <div class="title">
         <span>21st century skills</span>
       </div>
-      <div class="text-center mt-2" style="font-size: 20px">
+      <div class="sub-title text-center mt-2">
         เด็กยุคใหม่ต้องมีทักษะในศตวรรษที่ 21
       </div>
 
       <div class="desc">
-        <div class="title text-primary mt-5 mb-4 text-left">
+        <div class="title text-primary mt-5 mb-4">
           3R Hard Skills
         </div>
         <div class="content">
@@ -20,7 +20,7 @@
       </div>
 
       <div class="desc">
-        <div class="title text-primary mt-5 mb-4 text-left">
+        <div class="title text-primary mt-5 mb-4">
           8C Soft Skills
         </div>
         <div class="content">
@@ -62,14 +62,32 @@ export default {};
   .container {
     position: relative;
     z-index: 1;
+    @include media-breakpoint-down(md) {
+      padding-bottom: 20vh;
+    }
   }
 
   .title {
-    text-align: center;
+    text-align: left;
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+
     span {
       font-weight: bold;
       font-size: 3vw;
       border-bottom: 3px solid #1c86f2;
+      @include media-breakpoint-down(md) {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .sub-title {
+    font-size: 20px;
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
     }
   }
 
@@ -88,6 +106,10 @@ export default {};
     img {
       width: 50vw;
       opacity: 0.3;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        opacity: 0.2;
+      }
     }
   }
 }

@@ -42,6 +42,9 @@ export default {};
       font-weight: bold;
       font-size: 3vw;
       border-bottom: 3px solid #1c86f2;
+      @include media-breakpoint-down(md) {
+        font-size: 20px;
+      }
     }
   }
 
@@ -52,6 +55,11 @@ export default {};
       display: inline-block;
       width: 45vw;
       font-size: 20px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 17px;
+        width: 100%;
+      }
     }
   }
 
@@ -62,6 +70,10 @@ export default {};
     img {
       width: 50vw;
       opacity: 0.3;
+      @include media-breakpoint-down(md) {
+        width: 100vw;
+        opacity: 0.2;
+      }
     }
   }
 }

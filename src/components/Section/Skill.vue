@@ -5,7 +5,7 @@
         <h1>SKILL MAPPING</h1>
       </div>
       <div class="menu row mt-5">
-        <div v-for="career in careers" :key="career.name" class="col-sm-6 col-md-3 text-center">
+        <div v-for="career in careers" :key="career.name" class="col-6 col-md-3 text-center">
           <button
             class="btn btn-primary btn-lg"
             :class="[{ disabled: career.disabled }, { active: career.active }]"
@@ -15,14 +15,8 @@
           </button>
         </div>
       </div>
-      <div class="content row mt-5">
-        <div class="graph-switch" @click="activeGraph()">
-          <div v-if="selected_graph == 'snakey'" class="col switch-item">
-            Snakey Diagram <b-icon icon="arrow-right-short" />
-          </div>
-          <div v-else class="col switch-item">Bar Plot <b-icon icon="arrow-right-short" /></div>
-        </div>
-        <div class="col-12 col-md-3 d-flex flex-wrap">
+      <div class="content row">
+        <div class="col-12 col-md-3 d-flex flex-wrap graph-menu">
           <div class="bg-white p-2 rounded w-100">
             <ul class="text-dark">
               <li
@@ -38,10 +32,19 @@
             </ul>
           </div>
         </div>
-        <div class="col-12 col-md ">
+        <div class="col-12 col-md graph-content">
+          <div class="graph-switch" @click="activeGraph()">
+            <div v-if="selected_graph == 'snakey'" class="col switch-item">
+              Snakey Diagram <b-icon icon="arrow-right-short" />
+            </div>
+            <div v-else class="col switch-item">Bar Plot <b-icon icon="arrow-right-short" /></div>
+          </div>
           <div class="bg-white rounded">
-            <div class="embed-responsive embed-responsive-4by3">
+            <div class="pc-graph embed-responsive embed-responsive-4by3">
               <iframe class="embed-responsive-item" :src="`/graph/${selected_graph}/${selected_content}`"> </iframe>
+            </div>
+            <div class="mobile-graph d-flex justify-content-center align-items-center h-100">
+              <a target="_blank" :href="`/graph/${selected_graph}/${selected_content}`">View</a>
             </div>
           </div>
         </div>
@@ -145,14 +148,38 @@ export default {
   justify-content: center;
   align-items: center;
   color: #fff;
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+
+  .pc-graph {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  .mobile-graph {
+    min-height: 20vh;
+    font-size: 20px;
+    font-weight: bold;
+    @include media-breakpoint-up(md) {
+      display: none !important;
+    }
+  }
 
   .content {
+    margin-top: 30px;
     position: relative;
     .graph-switch {
       position: absolute;
       right: 0;
-      top: -30px;
+      top: -25px;
       cursor: pointer;
+      @include media-breakpoint-down(md) {
+        font-size: 13px;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 10px;
     }
   }
   ul {
@@ -187,23 +214,50 @@ export default {
       font-size: 40px;
       letter-spacing: 3px;
       border-bottom: 5px solid #1c86f2;
+      @include media-breakpoint-down(md) {
+        font-size: 25px;
+      }
     }
   }
 
   .menu {
     > div {
       margin-bottom: 30px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 10px;
+      }
     }
     button {
       border-width: 3px;
       min-width: 100%;
-      text-transform: capitalize;
+      text-transform: uppercase;
       &:not(.active) {
         background: none;
       }
       &.disabled {
         cursor: auto;
       }
+
+      @include media-breakpoint-down(md) {
+        font-size: 13px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .graph-menu {
+      ul {
+        max-height: 20vh;
+        overflow-y: scroll;
+        li {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .graph-content {
+      margin-top: 35px;
+      padding-bottom: 5vh;
     }
   }
 }

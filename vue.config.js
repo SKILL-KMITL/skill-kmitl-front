@@ -24,6 +24,15 @@ if (process.env.NODE_ENV == 'production') {
 }
 
 module.exports = {
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `
+        @import "@/assets/scss/main.scss";
+        `
+      }
+    }
+  },
   pluginOptions: {
     compression: {
       brotli: {
