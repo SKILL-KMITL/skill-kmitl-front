@@ -1,0 +1,45 @@
+$border-radius: 10px;
+$input-btn-padding-y: 0.5rem;
+$input-btn-padding-x: 1rem;
+$form-group-margin-bottom: 1.5rem;
+$modal-content-border-radius: 10px;
+$enable-gradients: true;
+
+*:focus {
+  outline: none !important;
+}
+
+.container {
+  transition: all 0.3s ease-out
+}
+
+.custom-file {
+  width: auto !important;
+  min-width: 20vw;
+  
+  label {
+    cursor: pointer;
+    background: $blue;
+    border-color: none;
+    border: none;
+    transition: 0.3s opacity ease-out;
+    
+    span {
+      color: #f8f9fa;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &.active label{
+    background-color: #28a745 !important;
+  }
+}
+
+.custom-file-label::after {
+  display: none !important;
+  // content: ""
+}
+

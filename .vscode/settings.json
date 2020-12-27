@@ -1,0 +1,16 @@
+{ 
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javascript",
+    "json",
+    "typescript"
+  ],
+ }

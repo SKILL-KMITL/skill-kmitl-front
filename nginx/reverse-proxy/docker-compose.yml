@@ -1,0 +1,24 @@
+version: '3'
+services:
+  reverse-proxy:
+    container_name: reverse-proxy
+    restart: always
+    build: ./
+    networks:
+      - application-prod-network
+      - application-stag-network
+    ports:
+      - 80:80
+      - 443:443
+      - 8080:8080
+    volumes:
+      - /etc/letsencrypt/live/tcas.it.kmitl.ac.th/fullchain.pem:/etc/nginx/ssl/fullchain.pem
+      - /etc/letsencrypt/live/tcas.it.kmitl.ac.th/privkey.pem:/etc/nginx/ssl/privkey.pem
+
+networks:
+  application-prod-network:
+    external:
+      name: front-prod_default
+  application-stag-network:
+    external:
+      name: front-stag_default

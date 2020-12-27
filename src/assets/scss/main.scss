@@ -1,0 +1,27 @@
+
+@import 'colors';
+@import 'font';
+@import 'custom';
+
+
+/* -------------------------------- Bootstrap ------------------------------- */
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-vue/dist/bootstrap-vue.min";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+
+/* ---------------------------------- Views --------------------------------- */
+// @import "views/login";
+// @import 'views/steps';
+// @import "views/teacher";
+
+
+/* -------------------------------- Component ------------------------------- */
+// @import "components/progress";
+// @import "components/teacher_header";
+
+
+/* ---------------------------------- Other --------------------------------- */
+@import 'helper';
+@import 'transition';
+

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  front-prod:
+    container_name: front-prod
+    image: nginx:1.12
+    volumes:
+      - ../../dist/:/usr/share/nginx/html/
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+    expose:
+      - "80"
