@@ -40,10 +40,10 @@
             <div v-else class="col switch-item">Bar Plot <b-icon icon="arrow-right-short" /></div>
           </div>
           <div class="bg-white rounded">
-            <div class="pc-graph embed-responsive embed-responsive-4by3">
+            <div class="pc-graph d-none d-md-flex embed-responsive embed-responsive-4by3">
               <iframe class="embed-responsive-item" :src="`/graph/${selected_graph}/${selected_content}`"> </iframe>
             </div>
-            <div class="mobile-graph d-flex justify-content-center align-items-center h-100">
+            <div class="mobile-graph d-flex d-md-none justify-content-center align-items-center h-100">
               <a target="_blank" :href="`/graph/${selected_graph}/${selected_content}`">View</a>
             </div>
           </div>
@@ -148,22 +148,14 @@ export default {
   justify-content: center;
   align-items: center;
   color: #fff;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     padding: 0;
   }
 
-  .pc-graph {
-    @include media-breakpoint-down(md) {
-      display: none;
-    }
-  }
   .mobile-graph {
     min-height: 20vh;
     font-size: 20px;
     font-weight: bold;
-    @include media-breakpoint-up(md) {
-      display: none !important;
-    }
   }
 
   .content {
@@ -174,11 +166,11 @@ export default {
       right: 0;
       top: -25px;
       cursor: pointer;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         font-size: 13px;
       }
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
       margin-top: 10px;
     }
   }
@@ -214,7 +206,7 @@ export default {
       font-size: 40px;
       letter-spacing: 3px;
       border-bottom: 5px solid #1c86f2;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         font-size: 25px;
       }
     }
@@ -223,7 +215,7 @@ export default {
   .menu {
     > div {
       margin-bottom: 30px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         margin-bottom: 10px;
       }
     }
@@ -238,13 +230,13 @@ export default {
         cursor: auto;
       }
 
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         font-size: 13px;
       }
     }
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     .graph-menu {
       ul {
         max-height: 20vh;
