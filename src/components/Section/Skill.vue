@@ -148,7 +148,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: #fff;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     padding: 0;
   }
 
