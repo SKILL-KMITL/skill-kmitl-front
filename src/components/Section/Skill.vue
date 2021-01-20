@@ -129,6 +129,7 @@ export default {
       this.careers.map((item) => (item.active = false));
       this.careers[index].active = true;
       this.selected_career = this.careers[index];
+      this.selected_content = `${this.selected_career.name}/${this.selected_career.position[0]}.html`;
     },
     activePosition: function(position) {
       // prevent if same as selected
