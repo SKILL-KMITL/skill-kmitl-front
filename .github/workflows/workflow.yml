@@ -1,0 +1,62 @@
+name: production-workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+      # Checkout
+      - name: Checkout code
+        uses: actions/checkout@master
+        with:
+          ref: master
+
+      # Setup node
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+
+      # Get cache directory
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+        # Cache yarn
+      - name: Cache yarn
+        id: cache-yarn
+        uses: actions/cache@v2
+        with:
+          path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            **/node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      # Install dependencies
+      - name: Install Dependencies
+        # if: steps.cache-yarn.outputs.cache-hit != 'true'
+        run: yarn install --frozen-lockfile
+
+      # Build static
+      - name: Build static
+        run: yarn run build --mode production
+        env:
+          NODE_ENV: production
+
+      # Copy project
+      - name: Copy project
+        uses: appleboy/scp-action@master
+        with:
+          host: skill.
+          username: ${{ secrets.SERVER_USER }}
+          key : ${{ secrets.SERVER_KEY }}
+          source: "./, !./node_modules"
+          target: /var/www/html
+          rm: true
