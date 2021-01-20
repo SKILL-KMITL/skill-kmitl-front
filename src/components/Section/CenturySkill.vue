@@ -1,7 +1,7 @@
 <template>
   <div class="century-section">
     <div class="container">
-      <div class="title">
+      <div class="title text-center">
         <span>21st century skills</span>
       </div>
       <div class="sub-title text-center mt-2">

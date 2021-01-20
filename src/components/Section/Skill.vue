@@ -17,6 +17,9 @@
       </div>
       <div class="content row">
         <div class="col-12 col-md-3 d-flex flex-wrap graph-menu">
+          <div class="graph-date col">
+            Linkedin [15/11/2020]
+          </div>
           <div class="bg-white p-2 rounded w-100">
             <ul class="text-dark">
               <li
@@ -72,8 +75,14 @@ export default {
             'network technology',
             'service and infrastructure',
             'software development',
-            'storange and data'
+            'storage and data'
           ]
+        },
+        {
+          name: 'financial',
+          active: false,
+          disabled: false,
+          position: ['overview', 'banks', 'corporates', 'institutions', 'public accounting']
         },
         {
           name: 'agriculture',
@@ -161,10 +170,18 @@ export default {
   .content {
     margin-top: 30px;
     position: relative;
+    .graph-date {
+      position: absolute;
+      left: 0;
+      top: -30px;
+      @include media-breakpoint-down(md) {
+        font-size: 13px;
+      }
+    }
     .graph-switch {
       position: absolute;
       right: 0;
-      top: -25px;
+      top: -30px;
       cursor: pointer;
       @include media-breakpoint-down(md) {
         font-size: 13px;
