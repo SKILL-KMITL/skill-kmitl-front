@@ -59,4 +59,4 @@ jobs:
           key : ${{ secrets.SERVER_KEY }}
           source: "./, !./node_modules"
           target: /var/www/html
-          rm: false
+          rm: true
