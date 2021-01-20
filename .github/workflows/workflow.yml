@@ -57,6 +57,6 @@ jobs:
           host: skill.kmitl.ac.th
           username: vasin
           key : ${{ secrets.SERVER_KEY }}
-          source: "./dist"
-          target: /var/www/html
+          source: "./dist/"
+          target: /var/www
           rm: true
