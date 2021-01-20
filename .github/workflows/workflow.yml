@@ -54,8 +54,8 @@ jobs:
       - name: Copy project
         uses: appleboy/scp-action@master
         with:
-          host: skill.
-          username: ${{ secrets.SERVER_USER }}
+          host: skill.kmitl.ac.th
+          username: vasin
           key : ${{ secrets.SERVER_KEY }}
           source: "./, !./node_modules"
           target: /var/www/html
