@@ -18,7 +18,7 @@
       <div class="content row">
         <div class="col-12 col-md-3 d-flex flex-wrap graph-menu">
           <div class="graph-date col">
-            Linkedin [15/11/2020]
+            {{ selected_career.updated }}
           </div>
           <div class="bg-white p-2 rounded w-100">
             <ul class="text-dark">
@@ -66,6 +66,7 @@ export default {
           name: 'it',
           active: true,
           disabled: false,
+          updated: '15/11/2020 (2720)',
           position: [
             'overview',
             'devops and cloud technology',
@@ -82,6 +83,7 @@ export default {
           name: 'financial',
           active: false,
           disabled: false,
+          updated: '20/1/2021 (1390)',
           position: ['overview', 'banks', 'corporates', 'institutions', 'public accounting']
         },
         {
