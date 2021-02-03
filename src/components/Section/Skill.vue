@@ -87,6 +87,20 @@ export default {
           position: ['overview', 'banks', 'corporates', 'institutions', 'public accounting']
         },
         {
+          name: 'marketing',
+          active: false,
+          disabled: false,
+          position: [
+            'overview',
+            'brand marketing',
+            'content marketing',
+            'digital marketing',
+            'general marketing',
+            'marketing communications',
+            'product marketing'
+          ]
+        },
+        {
           name: 'agriculture',
           active: false,
           disabled: true,
@@ -94,12 +108,6 @@ export default {
         },
         {
           name: 'travel',
-          active: false,
-          disabled: true,
-          position: []
-        },
-        {
-          name: 'marketing',
           active: false,
           disabled: true,
           position: []
