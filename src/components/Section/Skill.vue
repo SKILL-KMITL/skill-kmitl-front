@@ -90,6 +90,7 @@ export default {
           name: 'marketing',
           active: false,
           disabled: false,
+          updated: '3/2/2021 (2284)',
           position: [
             'overview',
             'brand marketing',
