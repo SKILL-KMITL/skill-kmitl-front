@@ -8,13 +8,14 @@
         <div class="title mt-0">
           NOT FOUND
         </div>
-        <router-link
-          :to="{ path: '/' }"
+        <!-- <a
           class="subtitle mt-3 d-inline-block font-weight-light border-bottom"
           style="font-size: 14px;"
+          href=""
+          @click="location.reload()"
         >
           กลับไปหน้าแรก
-        </router-link>
+        </a> -->
       </div>
     </div>
   </div>

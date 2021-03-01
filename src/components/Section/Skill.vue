@@ -36,11 +36,48 @@
           </div>
         </div>
         <div class="col-12 col-md graph-content">
-          <div class="graph-switch" @click="activeGraph()">
-            <div v-if="selected_graph == 'snakey'" class="col switch-item">
+          <div class="graph-switch flex flex-row mb-3">
+            <div
+              class="btn btn-success btn-sm"
+              :class="{ active: selected_graph == 'snakey_hard' }"
+              @click="selected_graph = 'snakey_hard'"
+            >
+              Snakey hardskill
+            </div>
+            <div
+              class="btn btn-success btn-sm"
+              :class="{ active: selected_graph == 'bar_hard' }"
+              @click="selected_graph = 'bar_hard'"
+            >
+              Barplot hardskill
+            </div>
+            <div
+              v-if="selected_career.soft_skill"
+              class="btn btn-secondary btn-sm"
+              :class="{ active: selected_graph == 'snakey_soft' }"
+              @click="selected_graph = 'snakey_soft'"
+            >
+              Snakey softskill
+            </div>
+            <div
+              v-if="selected_career.soft_skill"
+              class="btn btn-secondary btn-sm"
+              :class="{ active: selected_graph == 'bar_soft' }"
+              @click="selected_graph = 'bar_soft'"
+            >
+              Bar softskill
+            </div>
+            <div
+              class="btn btn-secondary btn-sm"
+              :class="{ active: selected_graph == 'education' }"
+              @click="selected_graph = 'education'"
+            >
+              Education
+            </div>
+            <!-- <div v-if="selected_graph == 'snakey'" class="col switch-item">
               Snakey Diagram <b-icon icon="arrow-right-short" />
             </div>
-            <div v-else class="col switch-item">Bar Plot <b-icon icon="arrow-right-short" /></div>
+            <div v-else class="col switch-item">Bar Plot <b-icon icon="arrow-right-short" /></div> -->
           </div>
           <div class="bg-white rounded">
             <div class="pc-graph d-none d-md-flex embed-responsive embed-responsive-4by3">
@@ -66,6 +103,7 @@ export default {
           name: 'it',
           active: true,
           disabled: false,
+          soft_skill: false,
           updated: '15/11/2020 (2720)',
           position: [
             'overview',
@@ -83,6 +121,7 @@ export default {
           name: 'financial',
           active: false,
           disabled: false,
+          soft_skill: false,
           updated: '20/1/2021 (1390)',
           position: ['overview', 'banks', 'corporates', 'institutions', 'public accounting']
         },
@@ -90,6 +129,7 @@ export default {
           name: 'marketing',
           active: false,
           disabled: false,
+          soft_skill: false,
           updated: '3/2/2021 (2284)',
           position: [
             'overview',
@@ -105,6 +145,7 @@ export default {
           name: 'artistic',
           active: false,
           disabled: false,
+          soft_skill: true,
           updated: '20/2/2021 (1783)',
           position: [
             'overview',
@@ -122,6 +163,7 @@ export default {
           name: 'engineer',
           active: false,
           disabled: false,
+          soft_skill: true,
           updated: '28/2/2021 (700)',
           position: ['overview', 'automotive']
         },
@@ -129,6 +171,7 @@ export default {
           name: 'transportation',
           active: false,
           disabled: false,
+          soft_skill: true,
           updated: '1/3/2021 (640)',
           position: ['overview', 'railroad']
         },
@@ -148,7 +191,7 @@ export default {
       selected_career: [],
       selected_position: [],
       selected_content: '',
-      selected_graph: 'snakey'
+      selected_graph: 'snakey_hard'
     };
   },
   mounted() {
@@ -178,11 +221,6 @@ export default {
       // update update state
       this.selected_position = position;
       this.selected_content = `${this.selected_career.name}/${this.selected_position}.html`;
-    },
-
-    activeGraph: function() {
-      if (this.selected_graph == 'snakey') this.selected_graph = 'bar';
-      else this.selected_graph = 'snakey';
     }
   }
 };
@@ -222,10 +260,6 @@ export default {
       }
     }
     .graph-switch {
-      position: absolute;
-      right: 0;
-      top: -30px;
-      cursor: pointer;
       @include media-breakpoint-down(md) {
         font-size: 13px;
       }
