@@ -102,6 +102,37 @@ export default {
           ]
         },
         {
+          name: 'artistic',
+          active: false,
+          disabled: false,
+          updated: '20/2/2021 (1783)',
+          position: [
+            'overview',
+            'digital art',
+            'fasion',
+            'fine art',
+            'flim',
+            'music',
+            'performing',
+            'photography',
+            'theator'
+          ]
+        },
+        {
+          name: 'engineer',
+          active: false,
+          disabled: false,
+          updated: '28/2/2021 (700)',
+          position: ['overview', 'automotive']
+        },
+        {
+          name: 'transportation',
+          active: false,
+          disabled: false,
+          updated: '1/3/2021 (640)',
+          position: ['overview', 'railroad']
+        },
+        {
           name: 'agriculture',
           active: false,
           disabled: true,
