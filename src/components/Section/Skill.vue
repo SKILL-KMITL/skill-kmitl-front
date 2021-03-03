@@ -67,17 +67,6 @@
             >
               Bar softskill
             </div>
-            <div
-              v-if="selected_career.education"
-              class="btn btn-secondary btn-sm"
-              :class="{ active: selected_graph == 'education' }"
-              @click="
-                selected_graph = 'education';
-                selected_content = `${selected_career.name}/education.html`;
-              "
-            >
-              Education
-            </div>
             <!-- <div v-if="selected_graph == 'snakey'" class="col switch-item">
               Snakey Diagram <b-icon icon="arrow-right-short" />
             </div>
@@ -150,7 +139,6 @@ export default {
           name: 'artistic',
           active: false,
           disabled: false,
-          education: true,
           soft_skill: true,
           updated: '20/2/2021 (1783)',
           position: [
@@ -169,28 +157,26 @@ export default {
           name: 'engineer',
           active: false,
           disabled: false,
-          education: true,
           soft_skill: true,
           updated: '2/3/2021 (980)',
-          position: ['overview', 'automotive', 'telecommunication']
+          position: ['overview', 'education', 'automotive', 'telecommunication']
         },
         {
           name: 'transportation',
           active: false,
           disabled: false,
-          education: true,
+
           soft_skill: true,
           updated: '1/3/2021 (640)',
-          position: ['overview', 'railroad']
+          position: ['overview', 'education', 'railroad']
         },
         {
           name: 'agriculture',
           active: false,
           disabled: false,
-          education: true,
           soft_skill: true,
           updated: '2/3/2021 (640)',
-          position: ['overview', 'agribusiness', 'animal', 'natural resources']
+          position: ['overview', 'education', 'agribusiness', 'animal', 'natural resources']
         },
         {
           name: 'travel',
