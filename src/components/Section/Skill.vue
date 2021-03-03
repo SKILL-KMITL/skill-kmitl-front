@@ -158,7 +158,7 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '2/3/2021 (980)',
+          updated: '2/3/2021 (722)',
           position: ['overview', 'education', 'automotive', 'telecommunication']
         },
         {
@@ -167,7 +167,7 @@ export default {
           disabled: false,
 
           soft_skill: true,
-          updated: '1/3/2021 (640)',
+          updated: '1/3/2021 (629)',
           position: ['overview', 'education', 'railroad']
         },
         {
@@ -175,7 +175,7 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '2/3/2021 (640)',
+          updated: '2/3/2021 (83)',
           position: ['overview', 'education', 'agribusiness', 'animal', 'natural resources']
         },
         {
