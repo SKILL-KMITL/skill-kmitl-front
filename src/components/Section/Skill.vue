@@ -39,10 +39,10 @@
           <div class="graph-switch flex flex-row mb-3">
             <div
               class="btn btn-success btn-sm"
-              :class="{ active: selected_graph == 'snakey_hard' }"
-              @click="selected_graph = 'snakey_hard'"
+              :class="{ active: selected_graph == 'sankey_hard' }"
+              @click="selected_graph = 'sankey_hard'"
             >
-              Snakey hardskill
+              Sankey hardskill
             </div>
             <div
               class="btn btn-success btn-sm"
@@ -54,10 +54,10 @@
             <div
               v-if="selected_career.soft_skill"
               class="btn btn-secondary btn-sm"
-              :class="{ active: selected_graph == 'snakey_soft' }"
-              @click="selected_graph = 'snakey_soft'"
+              :class="{ active: selected_graph == 'sankey_soft' }"
+              @click="selected_graph = 'sankey_soft'"
             >
-              Snakey softskill
+              Sankey softskill
             </div>
             <div
               v-if="selected_career.soft_skill"
@@ -68,9 +68,13 @@
               Bar softskill
             </div>
             <div
+              v-if="selected_career.education"
               class="btn btn-secondary btn-sm"
               :class="{ active: selected_graph == 'education' }"
-              @click="selected_graph = 'education'"
+              @click="
+                selected_graph = 'education';
+                selected_content = `${selected_career.name}/education.html`;
+              "
             >
               Education
             </div>
@@ -80,6 +84,7 @@
             <div v-else class="col switch-item">Bar Plot <b-icon icon="arrow-right-short" /></div> -->
           </div>
           <div class="bg-white rounded">
+            {{ `/graph/${selected_graph}/${selected_content}` }}
             <div class="pc-graph d-none d-md-flex embed-responsive embed-responsive-4by3">
               <iframe class="embed-responsive-item" :src="`/graph/${selected_graph}/${selected_content}`"> </iframe>
             </div>
@@ -145,6 +150,7 @@ export default {
           name: 'artistic',
           active: false,
           disabled: false,
+          education: true,
           soft_skill: true,
           updated: '20/2/2021 (1783)',
           position: [
@@ -163,14 +169,16 @@ export default {
           name: 'engineer',
           active: false,
           disabled: false,
+          education: true,
           soft_skill: true,
-          updated: '28/2/2021 (700)',
-          position: ['overview', 'automotive']
+          updated: '2/3/2021 (980)',
+          position: ['overview', 'automotive', 'telecommunication']
         },
         {
           name: 'transportation',
           active: false,
           disabled: false,
+          education: true,
           soft_skill: true,
           updated: '1/3/2021 (640)',
           position: ['overview', 'railroad']
@@ -178,8 +186,11 @@ export default {
         {
           name: 'agriculture',
           active: false,
-          disabled: true,
-          position: []
+          disabled: false,
+          education: true,
+          soft_skill: true,
+          updated: '2/3/2021 (640)',
+          position: ['overview', 'agribusiness', 'animal', 'natural resources']
         },
         {
           name: 'travel',
@@ -191,7 +202,7 @@ export default {
       selected_career: [],
       selected_position: [],
       selected_content: '',
-      selected_graph: 'snakey_hard'
+      selected_graph: 'sankey_hard'
     };
   },
   mounted() {
