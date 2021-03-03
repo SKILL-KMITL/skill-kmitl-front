@@ -210,6 +210,8 @@ export default {
       this.careers[index].active = true;
       this.selected_career = this.careers[index];
       this.selected_content = `${this.selected_career.name}/${this.selected_career.position[0]}.html`;
+      this.selected_position = this.selected_career.position[0];
+      console.log(this.selected_content);
     },
     activePosition: function(position) {
       // prevent if same as selected
