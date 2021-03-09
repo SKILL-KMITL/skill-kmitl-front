@@ -167,7 +167,9 @@ export default {
             'biotechnology',
             'environmental',
             'food',
-            'natural resources'
+            'natural resources',
+            'plant',
+            'power, structural, technical'
           ]
         },
         {
