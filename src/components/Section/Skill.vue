@@ -158,7 +158,7 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '2/3/2021 (83)',
+          updated: '8/3/2021 (1691)',
           position: [
             'overview',
             'education',
