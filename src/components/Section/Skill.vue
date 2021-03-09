@@ -154,6 +154,23 @@ export default {
           ]
         },
         {
+          name: 'agriculture',
+          active: false,
+          disabled: false,
+          soft_skill: true,
+          updated: '2/3/2021 (83)',
+          position: [
+            'overview',
+            'education',
+            'agribusiness',
+            'animal',
+            'biotechnology',
+            'environmental',
+            'food',
+            'natural resources'
+          ]
+        },
+        {
           name: 'engineer',
           active: false,
           disabled: false,
@@ -170,14 +187,7 @@ export default {
           updated: '1/3/2021 (629)',
           position: ['overview', 'education', 'railroad']
         },
-        {
-          name: 'agriculture',
-          active: false,
-          disabled: false,
-          soft_skill: true,
-          updated: '2/3/2021 (83)',
-          position: ['overview', 'education', 'agribusiness', 'animal', 'natural resources']
-        },
+
         {
           name: 'travel',
           active: false,
