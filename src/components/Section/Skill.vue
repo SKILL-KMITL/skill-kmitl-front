@@ -178,7 +178,16 @@ export default {
           disabled: false,
           soft_skill: true,
           updated: '2/3/2021 (722)',
-          position: ['overview', 'education', 'automotive', 'telecommunication']
+          position: [
+            'overview',
+            'education',
+            'automotive',
+            'chemical engineer',
+            'civil engineer',
+            'electrical engineer',
+            'interdisciplinary',
+            'telecommunication'
+          ]
         },
         {
           name: 'transportation',
