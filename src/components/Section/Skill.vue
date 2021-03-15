@@ -108,7 +108,7 @@ export default {
             'network technology',
             'service and infrastructure',
             'software development',
-            'storage and data'
+            'IT storage and data'
           ]
         },
         {
