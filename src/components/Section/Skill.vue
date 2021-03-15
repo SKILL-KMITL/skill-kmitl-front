@@ -42,14 +42,14 @@
               :class="{ active: selected_graph == 'sankey_hard' }"
               @click="selected_graph = 'sankey_hard'"
             >
-              Sankey hardskill
+              Sankey hard skill
             </div>
             <div
               class="btn btn-success btn-sm"
               :class="{ active: selected_graph == 'bar_hard' }"
               @click="selected_graph = 'bar_hard'"
             >
-              Barplot hardskill
+              Barplot hard skill
             </div>
             <div
               v-if="selected_career.soft_skill"
@@ -57,7 +57,7 @@
               :class="{ active: selected_graph == 'sankey_soft' }"
               @click="selected_graph = 'sankey_soft'"
             >
-              Sankey softskill
+              Sankey soft skill
             </div>
             <div
               v-if="selected_career.soft_skill"
@@ -65,7 +65,7 @@
               :class="{ active: selected_graph == 'bar_soft' }"
               @click="selected_graph = 'bar_soft'"
             >
-              Bar softskill
+              Bar soft skill
             </div>
             <!-- <div v-if="selected_graph == 'snakey'" class="col switch-item">
               Snakey Diagram <b-icon icon="arrow-right-short" />
@@ -103,8 +103,8 @@ export default {
             'overview',
             'devops and cloud technology',
             'information security',
-            'it business and strategy',
-            'it management',
+            'IT business and strategy',
+            'IT management',
             'network technology',
             'service and infrastructure',
             'software development',
@@ -112,7 +112,7 @@ export default {
           ]
         },
         {
-          name: 'financial',
+          name: 'finance',
           active: false,
           disabled: false,
           soft_skill: false,
@@ -136,7 +136,7 @@ export default {
           ]
         },
         {
-          name: 'artistic',
+          name: 'arts',
           active: false,
           disabled: false,
           soft_skill: true,
@@ -144,13 +144,13 @@ export default {
           position: [
             'overview',
             'digital art',
-            'fasion',
+            'fashion',
             'fine art',
             'flim',
             'music',
-            'performing',
+            'performing art',
             'photography',
-            'theator'
+            'theater'
           ]
         },
         {
@@ -173,7 +173,7 @@ export default {
           ]
         },
         {
-          name: 'engineer',
+          name: 'engineering',
           active: false,
           disabled: false,
           soft_skill: true,

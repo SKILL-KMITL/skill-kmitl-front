@@ -10,7 +10,7 @@
       <img src="@/assets/icon/logo.png" />
     </div>
     <div class="brand-wrapper">
-      <h1>SKILL MAPPING</h1>
+      <h1>SKILLS MAPPING</h1>
       <span>
         Skill maps provides a view of the entire study plan, how each part is involved, and which skills are optimal.
       </span>
