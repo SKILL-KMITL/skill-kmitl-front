@@ -12,7 +12,7 @@
     <div class="brand-wrapper">
       <h1>SKILLS MAPPING</h1>
       <span>
-        Skill maps provides a view of the entire study plan, how each part is involved, and which skills are optimal.
+        Dynamic platform of the demand and the supply of skills of the country.
       </span>
     </div>
   </div>
