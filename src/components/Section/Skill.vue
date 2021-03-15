@@ -140,7 +140,7 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '20/2/2021 (1783)',
+          updated: '5/3/2021 (2306)',
           position: [
             'overview',
             'digital art',
@@ -158,7 +158,7 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '8/3/2021 (1691)',
+          updated: '10/3/2021 (2144)',
           position: [
             'overview',
             'education',
@@ -177,7 +177,7 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '2/3/2021 (722)',
+          updated: '4/3/2021 (2805)',
           position: [
             'overview',
             'education',
