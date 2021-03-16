@@ -2,7 +2,7 @@
   <div class="skill-section bg-deep">
     <div class="container-fluid mt-5">
       <div class="title">
-        <h1>SKILL MAPPING</h1>
+        <h1>SKILLS MAPPING</h1>
       </div>
       <div class="menu row mt-5">
         <div v-for="career in careers" :key="career.name" class="col-6 col-md-3 text-center">
