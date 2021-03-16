@@ -2,7 +2,7 @@
   <div class="about-section">
     <div class="container">
       <div class="title">
-        <span>What is skill mapping?</span>
+        <span>What is skills mapping?</span>
       </div>
       <div class="desc">
         <span
