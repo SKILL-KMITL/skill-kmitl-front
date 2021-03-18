@@ -57,7 +57,7 @@ jobs:
           host: skill.kmitl.ac.th
           username: vasin
           key : ${{ secrets.SERVER_KEY }}
-          source: "./dist/"
+          source: "./dist, ./nginx"
           target: "./deploy/frontend"
           rm: true
 
@@ -70,5 +70,5 @@ jobs:
           key: ${{ secrets.SERVER_KEY }}
           # -V, --renew-anon-volumes   Recreate anonymous volumes instead of retrieving
           script: |
-            cd ./deploy/frontend
+            cd ./deploy/frontend/nginx
             docker-compose up -d -V --no-deps
