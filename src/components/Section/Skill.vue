@@ -97,18 +97,19 @@ export default {
           name: 'it',
           active: true,
           disabled: false,
-          soft_skill: false,
+          soft_skill: true,
           updated: '15/11/2020 (2720)',
           position: [
             'overview',
-            'devops and cloud technology',
-            'information security',
-            'IT business and strategy',
-            'IT management',
-            'network technology',
-            'service and infrastructure',
-            'software development',
-            'IT storage and data'
+            'education',
+            'Devops and Cloud Technology',
+            'Information Security',
+            'IT Business and Strategy',
+            'IT Management',
+            'Network Technology',
+            'Service and Infrastructure',
+            'Software Development',
+            'IT Storage and Data'
           ]
         },
         {
@@ -185,7 +186,7 @@ export default {
             'chemical engineer',
             'civil engineer',
             'electrical engineer',
-            'interdisciplinary',
+            'Interdisciplinary',
             'telecommunication'
           ]
         },
