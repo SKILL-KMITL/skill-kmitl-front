@@ -94,11 +94,11 @@ export default {
     return {
       careers: [
         {
-          name: 'it',
+          name: 'IT',
           active: true,
           disabled: false,
           soft_skill: true,
-          updated: '15/11/2020 (2720)',
+          updated: '15/11/2020 (3720)',
           position: [
             'overview',
             'education',
@@ -107,9 +107,63 @@ export default {
             'IT Business and Strategy',
             'IT Management',
             'Network Technology',
-            'Service and Infrastructure',
+            'Services and Infrastructure',
             'Software Development',
             'IT Storage and Data'
+          ]
+        },
+        {
+          name: 'Engineering',
+          active: false,
+          disabled: false,
+          soft_skill: true,
+          updated: '4/3/2021 (2805)',
+          position: [
+            'overview',
+            'education',
+            'automotive',
+            'chemical engineer',
+            'civil engineer',
+            'electrical engineer',
+            'Interdisciplinary',
+            'telecommunication'
+          ]
+        },
+        {
+          name: 'agriculture',
+          active: false,
+          disabled: false,
+          soft_skill: true,
+          updated: '10/3/2021 (2144)',
+          position: [
+            'overview',
+            'education',
+            'agribusiness',
+            'animal',
+            'biotechnology',
+            'environmental',
+            'food',
+            'natural resources',
+            'plant',
+            'power, structural, technical'
+          ]
+        },
+        {
+          name: 'arts',
+          active: false,
+          disabled: false,
+          soft_skill: true,
+          updated: '5/3/2021 (2306)',
+          position: [
+            'overview',
+            'digital art',
+            'fashion',
+            'fine art',
+            'flim',
+            'music',
+            'performing art',
+            'photography',
+            'theater'
           ]
         },
         {
@@ -136,60 +190,7 @@ export default {
             'product marketing'
           ]
         },
-        {
-          name: 'arts',
-          active: false,
-          disabled: false,
-          soft_skill: true,
-          updated: '5/3/2021 (2306)',
-          position: [
-            'overview',
-            'digital art',
-            'fashion',
-            'fine art',
-            'flim',
-            'music',
-            'performing art',
-            'photography',
-            'theater'
-          ]
-        },
-        {
-          name: 'agriculture',
-          active: false,
-          disabled: false,
-          soft_skill: true,
-          updated: '10/3/2021 (2144)',
-          position: [
-            'overview',
-            'education',
-            'agribusiness',
-            'animal',
-            'biotechnology',
-            'environmental',
-            'food',
-            'natural resources',
-            'plant',
-            'power, structural, technical'
-          ]
-        },
-        {
-          name: 'engineering',
-          active: false,
-          disabled: false,
-          soft_skill: true,
-          updated: '4/3/2021 (2805)',
-          position: [
-            'overview',
-            'education',
-            'automotive',
-            'chemical engineer',
-            'civil engineer',
-            'electrical engineer',
-            'Interdisciplinary',
-            'telecommunication'
-          ]
-        },
+
         {
           name: 'transportation',
           active: false,
