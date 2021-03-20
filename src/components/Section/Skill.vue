@@ -102,7 +102,7 @@ export default {
           position: [
             'overview',
             'education',
-            'Devops and Cloud Technology',
+            'DevOps and Cloud Technology',
             'Information Security',
             'IT Business and Strategy',
             'IT Management',
@@ -125,7 +125,7 @@ export default {
             'chemical engineer',
             'civil engineer',
             'electrical engineer',
-            'Interdisciplinary',
+            'interdisciplinary',
             'telecommunication'
           ]
         },
