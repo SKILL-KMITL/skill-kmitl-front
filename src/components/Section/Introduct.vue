@@ -7,7 +7,9 @@
     </div>
     <div class="header-wrapper">
       <p>KING MONGKUT’S INSTITUTE OF TECHNOLOGY LADKRABANG</p>
-      <img src="@/assets/icon/logo.png" />
+      <img src="@/assets/icon/logo.png" class="mr-3" />
+      <img src="@/assets/icon/logo_mapping.png" class="mr-3" />
+      <img src="@/assets/icon/logo_go.png" class="mr-3 p-1" />
     </div>
     <div class="brand-wrapper">
       <h1>SKILLS MAPPING</h1>
@@ -52,7 +54,7 @@ export default {};
     }
 
     img {
-      width: 45px;
+      height: 45px;
       object-fit: cover;
     }
   }

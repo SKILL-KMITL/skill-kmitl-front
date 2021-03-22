@@ -138,14 +138,14 @@ export default {
           position: [
             'overview',
             'education',
-            'agribusiness',
-            'animal',
-            'biotechnology',
-            'environmental',
-            'food',
-            'natural resources',
-            'plant',
-            'power, structural, technical'
+            'Agribusiness',
+            'Animal',
+            'Biotechnology',
+            'Environmental',
+            'Food',
+            'Natural resources',
+            'Plant',
+            'Power, Structural, Technical'
           ]
         },
         {
