@@ -17,9 +17,6 @@
       </div>
       <div class="content row">
         <div class="col-12 col-md-3 d-flex flex-wrap graph-menu">
-          <div class="graph-date col">
-            {{ selected_career.updated }}
-          </div>
           <div class="bg-white p-2 rounded w-100">
             <ul class="text-dark">
               <li
@@ -82,6 +79,12 @@
             </div>
           </div>
         </div>
+        <div class="col-12 text-right ">
+          <div class="graph-date">
+            {{ selected_career.updated }}
+            | {{ selected_career.source }}
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -98,6 +101,7 @@ export default {
           active: true,
           disabled: false,
           soft_skill: true,
+          source: 'CompTIA Certification Roadmap',
           updated: '15/11/2020 (3720)',
           position: [
             'overview',
@@ -114,6 +118,7 @@ export default {
         },
         {
           name: 'Engineering',
+          source: 'Wikipedia Engineering branches',
           active: false,
           disabled: false,
           soft_skill: true,
@@ -131,6 +136,7 @@ export default {
         },
         {
           name: 'Agriculture',
+          source: 'AgCentric: Career Cluster',
           active: false,
           disabled: false,
           soft_skill: true,
@@ -150,6 +156,7 @@ export default {
         },
         {
           name: 'arts',
+          source: 'The Art Career Project',
           active: false,
           disabled: false,
           soft_skill: true,
@@ -168,6 +175,7 @@ export default {
         },
         {
           name: 'finance',
+          source: 'Corporate Finance Institute: Career Map',
           active: false,
           disabled: false,
           soft_skill: false,
@@ -176,6 +184,7 @@ export default {
         },
         {
           name: 'marketing',
+          source: 'CareerTech: Marketing',
           active: false,
           disabled: false,
           soft_skill: false,
@@ -193,6 +202,7 @@ export default {
 
         {
           name: 'transportation',
+          source: 'CareerTech: Transportation, Distribution & Logistics',
           active: false,
           disabled: false,
 
@@ -274,9 +284,9 @@ export default {
     margin-top: 30px;
     position: relative;
     .graph-date {
-      position: absolute;
-      left: 0;
-      top: -30px;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: lighter;
       @include media-breakpoint-down(md) {
         font-size: 13px;
       }
