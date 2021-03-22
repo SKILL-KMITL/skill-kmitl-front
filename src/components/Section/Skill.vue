@@ -130,7 +130,7 @@ export default {
           ]
         },
         {
-          name: 'agriculture',
+          name: 'Agriculture',
           active: false,
           disabled: false,
           soft_skill: true,
