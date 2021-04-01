@@ -5,7 +5,11 @@
         <h1>SKILLS MAPPING</h1>
       </div>
       <div class="menu row mt-5">
-        <div v-for="career in careers" :key="career.name" class="col-6 col-md-3 text-center">
+        <div
+          v-for="career in careers"
+          :key="career.name"
+          class="col-6 col-md-3 text-center"
+        >
           <button
             class="btn btn-primary btn-lg"
             :class="[{ disabled: career.disabled }, { active: career.active }]"
@@ -72,14 +76,22 @@
           <div class="bg-white rounded">
             {{ `/graph/${selected_graph}/${selected_content}` }}
             <div class="pc-graph d-none d-md-flex embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item" :src="`/graph/${selected_graph}/${selected_content}`"> </iframe>
+              <iframe
+                class="embed-responsive-item"
+                :src="`/graph/${selected_graph}/${selected_content}`"
+              >
+              </iframe>
             </div>
-            <div class="mobile-graph d-flex d-md-none justify-content-center align-items-center h-100">
-              <a target="_blank" :href="`/graph/${selected_graph}/${selected_content}`">View</a>
+            <div
+              class="mobile-graph d-flex d-md-none justify-content-center align-items-center h-100"
+            >
+              <a target="_blank" :href="`/graph/${selected_graph}/${selected_content}`"
+                >View</a
+              >
             </div>
           </div>
         </div>
-        <div class="col-12 text-right ">
+        <div class="col-12 text-right">
           <div class="graph-date">
             {{ selected_career.updated }}
             | {{ selected_career.source }}
@@ -92,136 +104,136 @@
 
 <script>
 export default {
-  name: 'SkillSection',
+  name: "SkillSection",
   data() {
     return {
       careers: [
         {
-          name: 'IT',
+          name: "IT",
           active: true,
           disabled: false,
           soft_skill: true,
-          source: 'CompTIA Certification Roadmap',
-          updated: '15/11/2020 (3720)',
+          source: "CompTIA Certification Roadmap",
+          updated: "15/11/2020 (3720)",
           position: [
-            'overview',
-            'education',
-            'DevOps and Cloud Technology',
-            'Information Security',
-            'IT Business and Strategy',
-            'IT Management',
-            'Network Technology',
-            'Services and Infrastructure',
-            'Software Development',
-            'IT Storage and Data'
-          ]
+            "overview",
+            "education",
+            "DevOps and Cloud Technology",
+            "Information Security",
+            "IT Business and Strategy",
+            "IT Management",
+            "Network Technology",
+            "Services and Infrastructure",
+            "Software Development",
+            "IT Storage and Data",
+          ],
         },
         {
-          name: 'Engineering',
-          source: 'Wikipedia Engineering branches',
+          name: "Manufacturing",
+          source: "www.onetonline.org",
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '4/3/2021 (2805)',
+          updated: "1/4/2021 (1825)",
           position: [
-            'overview',
-            'education',
-            'automotive',
-            'chemical engineer',
-            'civil engineer',
-            'electrical engineer',
-            'interdisciplinary',
-            'telecommunication'
-          ]
+            "overview",
+            "education",
+            "Manufacturing Production Process Development",
+            "Maintenance, Installation & Repair",
+            "Production",
+          ],
         },
         {
-          name: 'Agriculture',
-          source: 'AgCentric: Career Cluster',
+          name: "Agriculture",
+          source: "AgCentric: Career Cluster",
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '10/3/2021 (2144)',
+          updated: "10/3/2021 (2144)",
           position: [
-            'overview',
-            'education',
-            'Agribusiness',
-            'Animal',
-            'Biotechnology',
-            'Environmental',
-            'Food',
-            'Natural resources',
-            'Plant',
-            'Power, Structural, Technical'
-          ]
+            "overview",
+            "education",
+            "Agribusiness",
+            "Animal",
+            "Biotechnology",
+            "Environmental",
+            "Food",
+            "Natural resources",
+            "Plant",
+            "Power, Structural, Technical",
+          ],
         },
         {
-          name: 'arts',
-          source: 'The Art Career Project',
+          name: "arts",
+          source: "The Art Career Project",
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '5/3/2021 (2306)',
+          updated: "28/3/2021 (2306)",
           position: [
-            'overview',
-            'digital art',
-            'fashion',
-            'fine art',
-            'flim',
-            'music',
-            'performing art',
-            'photography',
-            'theater'
-          ]
+            "overview",
+            "education",
+            "Journalism and Broadcasting",
+            "Performing Arts",
+            "Printing Technology",
+            "Visual Arts",
+          ],
         },
         {
-          name: 'finance',
-          source: 'Corporate Finance Institute: Career Map',
+          name: "finance",
+          source: "Corporate Finance Institute: Career Map",
           active: false,
           disabled: false,
           soft_skill: false,
-          updated: '20/1/2021 (1390)',
-          position: ['overview', 'banks', 'corporates', 'institutions', 'public accounting']
+          updated: "20/1/2021 (1390)",
+          position: [
+            "overview",
+            "banks",
+            "corporates",
+            "institutions",
+            "public accounting",
+          ],
         },
         {
-          name: 'marketing',
-          source: 'CareerTech: Marketing',
+          name: "marketing",
+          source: "CareerTech: Marketing",
           active: false,
           disabled: false,
           soft_skill: false,
-          updated: '3/2/2021 (2284)',
+          updated: "3/2/2021 (2284)",
           position: [
-            'overview',
-            'brand marketing',
-            'content marketing',
-            'digital marketing',
-            'general marketing',
-            'marketing communications',
-            'product marketing'
-          ]
+            "overview",
+            "brand marketing",
+            "content marketing",
+            "digital marketing",
+            "general marketing",
+            "marketing communications",
+            "product marketing",
+          ],
         },
 
         {
-          name: 'transportation',
-          source: 'CareerTech: Transportation, Distribution & Logistics',
+          name: "transportation",
+          source: "CareerTech: Transportation, Distribution & Logistics",
           active: false,
           disabled: false,
 
           soft_skill: true,
-          updated: '1/3/2021 (629)',
-          position: ['overview', 'education', 'railroad']
+          updated: "1/3/2021 (629)",
+          position: ["overview", "education", "railroad"],
         },
 
         {
-          name: 'travel',
+          name: "travel",
           active: false,
           disabled: true,
-          position: []
-        }
+          position: [],
+        },
       ],
       selected_career: [],
       selected_position: [],
-      selected_content: '',
-      selected_graph: 'sankey_hard'
+      selected_content: "",
+      selected_graph: "sankey_hard",
     };
   },
   mounted() {
@@ -230,7 +242,7 @@ export default {
     this.selected_content = `${this.selected_career.name}/${this.selected_position}.html`;
   },
   methods: {
-    activeCareer: function(career) {
+    activeCareer: function (career) {
       // prevent if same as selected
       if (career === this.selected_career.name) return;
 
@@ -246,15 +258,15 @@ export default {
       this.selected_position = this.selected_career.position[0];
       console.log(this.selected_content);
     },
-    activePosition: function(position) {
+    activePosition: function (position) {
       // prevent if same as selected
       if (position === this.selected_position) return;
 
       // update update state
       this.selected_position = position;
       this.selected_content = `${this.selected_career.name}/${this.selected_position}.html`;
-    }
-  }
+    },
+  },
 };
 </script>
 
