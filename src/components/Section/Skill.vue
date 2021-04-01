@@ -164,7 +164,7 @@ export default {
           ],
         },
         {
-          name: "arts",
+          name: "Arts",
           source: "The Art Career Project",
           active: false,
           disabled: false,
