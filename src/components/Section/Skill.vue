@@ -118,7 +118,7 @@ export default {
         },
         {
           name: 'Engineering and Technology',
-          active: true,
+          active: false,
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
