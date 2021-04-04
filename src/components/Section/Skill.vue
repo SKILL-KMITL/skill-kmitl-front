@@ -122,7 +122,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '3/4/2020 (1917)',
+          updated: '4/4/2020 (3306)',
           position: [
             'overview',
             'education',
@@ -136,7 +136,16 @@ export default {
             'Health and Safety Engineers',
             'Industrial Engineers',
             'Manufacturing Engineers',
-            'Materials Engineers'
+            'Materials Engineers',
+            'Mechanical Engineers',
+            'Mechatronics Engineers',
+            'Microsystems Engineers',
+            'Nuclear Engineers',
+            'Petroleum Engineers',
+            'Photonics Engineers',
+            'Radio Frequency and Identification Device',
+            'Robotics Engineers',
+            'Validation Engineers'
           ]
         },
         // {
