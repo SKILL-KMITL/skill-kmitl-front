@@ -200,6 +200,22 @@ export default {
           ]
         },
         {
+          name: 'Travel & Tourism',
+          active: false,
+          disabled: false,
+          soft_skill: true,
+          source: 'O*NETOnLine',
+          updated: '5/4/2020 (868)',
+          position: [
+            'overview',
+            'education',
+            'Reservation and Transportation',
+            'Tour Guides and Escorts',
+            'Travel Agents',
+            'Travel Guides'
+          ]
+        },
+        {
           name: 'finance',
           source: 'Corporate Finance Institute: Career Map',
           active: false,
@@ -235,13 +251,6 @@ export default {
           soft_skill: true,
           updated: '1/3/2021 (629)',
           position: ['overview', 'education', 'railroad']
-        },
-
-        {
-          name: 'travel',
-          active: false,
-          disabled: true,
-          position: []
         }
       ],
       selected_career: [],
