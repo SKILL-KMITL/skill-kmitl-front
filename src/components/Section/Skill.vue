@@ -216,6 +216,27 @@ export default {
           ]
         },
         {
+          name: 'Legal Services',
+          active: false,
+          disabled: false,
+          soft_skill: true,
+          source: 'O*NETOnLine',
+          updated: '5/5/2020 (1475)',
+          position: [
+            'overview',
+            'education',
+            'Administrative Law Judges',
+            'Arbitrators, Mediators, and Conciliators',
+            'Court Reporters',
+            'Judicial Law Clerks',
+            'Lawyers',
+            'Legal Secretaries',
+            'Magistrate Judges',
+            'Paralegals and Legal Assistants',
+            'Title Examiners and Abstractors'
+          ]
+        },
+        {
           name: 'finance',
           source: 'Corporate Finance Institute: Career Map',
           active: false,
