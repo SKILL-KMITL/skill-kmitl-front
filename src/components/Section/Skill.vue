@@ -221,7 +221,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '5/5/2020 (1475)',
+          updated: '5/4/2020 (1475)',
           position: [
             'overview',
             'education',
@@ -237,13 +237,21 @@ export default {
           ]
         },
         {
-          name: 'finance',
-          source: 'Corporate Finance Institute: Career Map',
+          name: 'Finance',
           active: false,
           disabled: false,
-          soft_skill: false,
-          updated: '20/1/2021 (1390)',
-          position: ['overview', 'banks', 'corporates', 'institutions', 'public accounting']
+          soft_skill: true,
+          source: 'O*NETOnLine',
+          updated: '6/4/2020 (792)',
+          position: [
+            'overview',
+            'education',
+            'Accountants and Auditors',
+            'Bill and Account Collectors',
+            'Brokerage Clerks',
+            'Budget Analysts',
+            'Credit Analysts'
+          ]
         },
         {
           name: 'marketing',
