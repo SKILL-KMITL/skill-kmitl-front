@@ -13,6 +13,8 @@
     </div>
     <div class="brand-wrapper">
       <h1>SKILLS MAPPING</h1>
+      <h3 class="text-white">INNOVATED IN KMITL</h3>
+      <hr />
       <span>
         Dynamic platform of the demand and the supply of skills of the country.
       </span>
@@ -75,11 +77,16 @@ export default {};
       color: #fff;
       font-size: 5vw;
       letter-spacing: 3px;
-      border-bottom: 5px solid #1c86f2;
 
       @include media-breakpoint-down(md) {
         font-size: 30px;
       }
+    }
+
+    hr {
+      height: 2px;
+      width: 200px;
+      border-bottom: 5px solid #1c86f2;
     }
 
     span {

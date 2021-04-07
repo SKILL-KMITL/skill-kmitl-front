@@ -242,7 +242,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '6/4/2020 (792)',
+          updated: '7/4/2020 (1588)',
           position: [
             'overview',
             'education',
@@ -250,7 +250,12 @@ export default {
             'Bill and Account Collectors',
             'Brokerage Clerks',
             'Budget Analysts',
-            'Credit Analysts'
+            'Credit Analysts',
+            'Credit Authorizers',
+            'Financial Managers',
+            'Fraud Examiners',
+            'Investment Analysts',
+            'Loan Officers'
           ]
         },
         {
