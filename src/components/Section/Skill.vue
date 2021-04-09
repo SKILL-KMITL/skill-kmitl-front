@@ -242,7 +242,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '7/4/2020 (1588)',
+          updated: '8/4/2020 (2488)',
           position: [
             'overview',
             'education',
@@ -255,7 +255,33 @@ export default {
             'Financial Managers',
             'Fraud Examiners',
             'Investment Analysts',
-            'Loan Officers'
+            'Loan Officers',
+            'Personal Financial Advisors',
+            'Personal Financial Planners',
+            'Securities and Commodities',
+            'Tax Preparers',
+            'Treasurers and Controllers'
+          ]
+        },
+        {
+          name: 'Architecture',
+          active: false,
+          disabled: false,
+          soft_skill: true,
+          source: 'O*NETOnLine',
+          updated: '9/4/2020 (2144)',
+          position: [
+            'overview',
+            'education',
+            'Architects',
+            'Architectural',
+            'Brickmasons and Blockmasons',
+            'Carpenters',
+            'Civil Engineering and Technicians',
+            'Construction Equipment Operators',
+            'Construction Laborers',
+            'Cost Estimators',
+            'Crane and Tower Operators'
           ]
         },
         {

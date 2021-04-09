@@ -7,6 +7,7 @@ import VueCookies from 'vue-cookies';
 import axios from 'axios';
 import env from './environment';
 import vueSmoothScroll from 'vue2-smooth-scroll';
+import VueAnalytics from 'vue-analytics';
 
 /* ---------------------------------- Style --------------------------------- */
 import VueSweetalert2 from 'vue-sweetalert2';
@@ -56,6 +57,12 @@ Vue.use(VueCookies);
 Vue.use(vueSmoothScroll);
 
 Vue.component('b-form-radio-group', BFormRadioGroup);
+
+//and then use it in main.js
+Vue.use(VueAnalytics, {
+  id: 'G-KHZBLDXPB4',
+  router
+});
 
 // axios.defaults.withCredentials = true;
 Vue.prototype.$env = env;
