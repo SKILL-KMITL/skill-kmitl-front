@@ -269,7 +269,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '9/4/2020 (2144)',
+          updated: '10/4/2020 (2863)',
           position: [
             'overview',
             'education',
@@ -281,7 +281,19 @@ export default {
             'Construction Equipment Operators',
             'Construction Laborers',
             'Cost Estimators',
-            'Crane and Tower Operators'
+            'Crane and Tower Operators',
+            'Drywall and Ceiling Tile Installers',
+            'Electricians',
+            'First-Line Supervisors of Construction',
+            'Floor Layers',
+            'Geodetic Surveyors',
+            'Insulation Workers',
+            'Interior Designers',
+            'Landscape Architects',
+            'Mining Machine Operators',
+            'Painters',
+            'Paving and Tamping Operators',
+            'Pipelayers'
           ]
         },
         {
