@@ -293,7 +293,31 @@ export default {
             'Mining Machine Operators',
             'Painters',
             'Paving and Tamping Operators',
-            'Pipelayers'
+            'Pipelayers',
+            'Plasterers and Stucco Masons',
+            'Roofers',
+            'Surveying and Mapping Technicians',
+            'Transportation Engineers'
+          ]
+        },
+        {
+          name: 'Education and Training',
+          active: false,
+          disabled: false,
+          soft_skill: true,
+          source: 'O*NETOnLine',
+          updated: '11/4/2020 (998)',
+          position: [
+            'overview',
+            'education',
+            'Adapted Physical Education',
+            'Adult Basic Education',
+            'Agricultural Sciences Teachers',
+            'Anthropology and Archeology Teachers',
+            'Architecture Teachers',
+            'Art, Drama, and Music Teachers',
+            'Atmospheric, Earth and Space Sciences Teachers',
+            'Biological Science Teachers'
           ]
         },
         {
