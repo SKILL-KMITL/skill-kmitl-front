@@ -306,7 +306,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '11/4/2020 (998)',
+          updated: '12/4/2020 (1990)',
           position: [
             'overview',
             'education',
@@ -317,7 +317,13 @@ export default {
             'Architecture Teachers',
             'Art, Drama, and Music Teachers',
             'Atmospheric, Earth and Space Sciences Teachers',
-            'Biological Science Teachers'
+            'Biological Science Teachers',
+            'Business Teachers',
+            'Chemistry Teachers',
+            'Computer Science Teachers',
+            'Economics Teachers',
+            'Education Teachers',
+            'Engineering Teachers'
           ]
         },
         {
