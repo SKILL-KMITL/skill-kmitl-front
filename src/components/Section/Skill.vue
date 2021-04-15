@@ -310,6 +310,8 @@ export default {
           position: [
             'overview',
             'education',
+            'Kindergarten School Teachers',
+            'Elementary School Teachers',
             'Adapted Physical Education',
             'Adult Basic Education',
             'Agricultural Sciences Teachers',
@@ -320,10 +322,19 @@ export default {
             'Biological Science Teachers',
             'Business Teachers',
             'Chemistry Teachers',
+            'Coaches and Scouts',
+            'Communications Teachers',
             'Computer Science Teachers',
             'Economics Teachers',
             'Education Teachers',
-            'Engineering Teachers'
+            'Engineering Teachers',
+            'English Language and Literature Teachers',
+            'Family and Consumer Sciences Teachers',
+            'Geography Teachers',
+            'History Teachers',
+            'Law Enforcement Teachers',
+            'Law Teachers',
+            'Mathematical Science Teachers'
           ]
         },
         {
