@@ -196,7 +196,8 @@ export default {
             'Journalism and Broadcasting',
             'Performing Arts',
             'Printing Technology',
-            'Visual Arts'
+            'Visual Arts',
+            'Video Game Designers'
           ]
         },
         {
@@ -306,7 +307,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '12/4/2020 (1990)',
+          updated: '15/4/2020 (3385)',
           position: [
             'overview',
             'education',
@@ -335,6 +336,37 @@ export default {
             'Law Enforcement Teachers',
             'Law Teachers',
             'Mathematical Science Teachers'
+          ]
+        },
+        {
+          name: 'Science and Mathematics',
+          active: false,
+          disabled: false,
+          soft_skill: true,
+          source: 'O*NETOnLine',
+          updated: '19/4/2020 (2898)',
+          position: [
+            'overview',
+            'education',
+            'Anthropologists and Archeologists',
+            'Astronomers',
+            'Atmospheric and Space Scientists',
+            'Biochemists and Biophysicists',
+            'Bioinformatics Scientists',
+            'Cartographer',
+            'Chemists',
+            'Clinical Data Managers',
+            'Conservation Scientists',
+            'Economists',
+            'Geographers',
+            'Geoscientists',
+            'Historians',
+            'Hydrologists',
+            'Materials Scientists',
+            'Mathematicians',
+            'Microbiologists',
+            'Photogrammetrist',
+            'Physicists'
           ]
         },
         {
