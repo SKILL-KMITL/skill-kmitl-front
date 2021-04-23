@@ -388,14 +388,31 @@ export default {
         },
 
         {
-          name: 'transportation',
-          source: 'CareerTech: Transportation, Distribution & Logistics',
+          name: 'Transportation',
+          source: 'O*NETOnLine',
           active: false,
           disabled: false,
-
           soft_skill: true,
-          updated: '1/3/2021 (629)',
-          position: ['overview', 'education', 'railroad']
+          updated: '23/4/2021 (2113)',
+          position: [
+            'overview',
+            'education',
+            'Air Traffic Controllers',
+            'Bus Drivers',
+            'Dispatchers',
+            'Heavy and Tractor-Trailer Truck Drivers',
+            'Industrial Truck and Tractor Operators',
+            'Light Truck Drivers',
+            'Locomotive Engineers',
+            'Logisticians',
+            'Logistics Analysts',
+            'Logistics Engineers',
+            'Rail Car Repairers',
+            'Rail Yard Engineers',
+            'Railroad Brake, Signal, and Switch Operators',
+            'Railroad Conductors and Yardmasters',
+            'Rail-Track Laying and Maintenance'
+          ]
         }
       ],
       selected_career: [],
