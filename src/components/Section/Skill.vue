@@ -386,14 +386,13 @@ export default {
             'product marketing'
           ]
         },
-
         {
           name: 'Transportation',
           source: 'O*NETOnLine',
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '23/4/2021 (2113)',
+          updated: '23/4/2021 (3113)',
           position: [
             'overview',
             'education',
@@ -411,7 +410,38 @@ export default {
             'Rail Yard Engineers',
             'Railroad Brake, Signal, and Switch Operators',
             'Railroad Conductors and Yardmasters',
-            'Rail-Track Laying and Maintenance'
+            'Rail-Track Laying and Maintenance',
+            'Ship Engineers',
+            'Tank Car, Truck, and Ship Loaders',
+            'Taxi Drivers',
+            'Traffic Technicians',
+            'Transportation and Distribution Managers'
+          ]
+        },
+        {
+          name: 'Health Science',
+          source: 'O*NETOnLine',
+          active: false,
+          disabled: false,
+          soft_skill: true,
+          updated: '25/4/2021 (1988)',
+          position: [
+            'overview',
+            'education',
+            'Allergists and Immunologists',
+            'Anesthesiologists',
+            'Audiologists',
+            'Bioengineers',
+            'Cardiovascular Technologists and Technicians',
+            'Chiropractors',
+            'Cytogenetic Technologists',
+            'Cytotechnologists',
+            'Dentists',
+            'Dermatologists',
+            'Diagnostic Medical Sonographers',
+            'Epidemiologists',
+            'Histotechnologists',
+            'Magnetic Resonance Imaging Technologists'
           ]
         }
       ],
