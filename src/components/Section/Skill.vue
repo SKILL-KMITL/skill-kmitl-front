@@ -344,7 +344,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '19/4/2020 (2898)',
+          updated: '22/4/2020 (3741)',
           position: [
             'overview',
             'education',
@@ -366,24 +366,43 @@ export default {
             'Mathematicians',
             'Microbiologists',
             'Photogrammetrist',
-            'Physicists'
+            'Physicists',
+            'Precision Agriculture Technicians',
+            'Quality Control Analysts',
+            'Statisticians',
+            'Survey Researchers'
           ]
         },
         {
-          name: 'marketing',
+          name: 'Marketing',
           source: 'CareerTech: Marketing',
           active: false,
           disabled: false,
-          soft_skill: false,
-          updated: '3/2/2021 (2284)',
+          soft_skill: true,
+          updated: '29/4/2021 (3292)',
           position: [
             'overview',
-            'brand marketing',
-            'content marketing',
-            'digital marketing',
-            'general marketing',
-            'marketing communications',
-            'product marketing'
+            'education',
+            'Advertising and Promotions Managers',
+            'Advertising Sales Agents',
+            'Cashiers',
+            'Counter and Rental Clerks',
+            'Demonstrators and Product Promoters',
+            'Door-to-Door Sales Workers',
+            'Driver and Sales Workers',
+            'First-Line Supervisors of Non-Retail Sales',
+            'First-Line Supervisors of Retail Sales',
+            'Marketing Managers',
+            'Parts Salespersons',
+            'Property, Real Estate Managers',
+            'Public Relations Managers',
+            'Public Relations Specialists',
+            'Real Estate Brokers',
+            'Retail Salespersons',
+            'Sales Engineers',
+            'Sales Managers',
+            'Securities and Commodities Sales Agents',
+            'Telemarketers'
           ]
         },
         {
@@ -424,7 +443,7 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '25/4/2021 (1988)',
+          updated: '27/4/2021 (2705)',
           position: [
             'overview',
             'education',
@@ -441,7 +460,12 @@ export default {
             'Diagnostic Medical Sonographers',
             'Epidemiologists',
             'Histotechnologists',
-            'Magnetic Resonance Imaging Technologists'
+            'Magnetic Resonance Imaging Technologists',
+            'Medical and Clinical Laboratory',
+            'Medical Scientists',
+            'Neurodiagnostic Technologists',
+            'Nuclear Medicine Technologists',
+            'Ophthalmic Medical Technologists'
           ]
         }
       ],
