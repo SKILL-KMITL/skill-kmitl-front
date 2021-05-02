@@ -102,7 +102,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'CompTIA Certification Roadmap',
-          updated: '15/11/2020 (3720)',
+          updated: '15/11/2020 (3732)',
           position: [
             'overview',
             'education',
@@ -122,7 +122,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '4/4/2020 (3306)',
+          updated: '4/4/2020 (3391)',
           position: [
             'overview',
             'education',
@@ -148,21 +148,6 @@ export default {
             'Validation Engineers'
           ]
         },
-        // {
-        //   name: "Manufacturing",
-        //   source: "www.onetonline.org",
-        //   active: false,
-        //   disabled: false,
-        //   soft_skill: true,
-        //   updated: "1/4/2021 (1825)",
-        //   position: [
-        //     "overview",
-        //     "education",
-        //     "Manufacturing Production Process Development",
-        //     "Maintenance, Installation & Repair",
-        //     "Production",
-        //   ],
-        // },
         {
           name: 'Agriculture',
           source: 'AgCentric: Career Cluster',
@@ -189,7 +174,7 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '28/3/2021 (2306)',
+          updated: '28/3/2021 (2125)',
           position: [
             'overview',
             'education',
@@ -222,7 +207,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '5/4/2020 (1475)',
+          updated: '5/4/2020 (1642)',
           position: [
             'overview',
             'education',
@@ -243,7 +228,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '8/4/2020 (2488)',
+          updated: '8/4/2020 (2422)',
           position: [
             'overview',
             'education',
@@ -270,7 +255,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '10/4/2020 (2863)',
+          updated: '10/4/2020 (3407)',
           position: [
             'overview',
             'education',
@@ -307,7 +292,7 @@ export default {
           disabled: false,
           soft_skill: true,
           source: 'O*NETOnLine',
-          updated: '15/4/2020 (3385)',
+          updated: '15/4/2020 (3550)',
           position: [
             'overview',
             'education',
@@ -379,7 +364,7 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '29/4/2021 (3292)',
+          updated: '1/5/2021 (3407)',
           position: [
             'overview',
             'education',
@@ -466,6 +451,24 @@ export default {
             'Neurodiagnostic Technologists',
             'Nuclear Medicine Technologists',
             'Ophthalmic Medical Technologists'
+          ]
+        },
+        {
+          name: 'Business Management & Administration',
+          source: 'O*NETOnLine',
+          active: false,
+          disabled: false,
+          soft_skill: true,
+          updated: '2/5/2021 (792)',
+          position: [
+            'overview',
+            'education',
+            'Chief Executives',
+            'Chief Sustainability Officers',
+            'Compliance Managers',
+            'General and Operations Managers',
+            'Investment Fund Managers',
+            'Loss Prevention Managers'
           ]
         }
       ],
