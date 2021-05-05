@@ -459,16 +459,31 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '2/5/2021 (792)',
+          updated: '2/5/2021 (3390)',
           position: [
             'overview',
             'education',
+            'Administrative Services Managers',
+            'Biomass Power Plant Managers',
+            'Business Continuity Planners',
             'Chief Executives',
             'Chief Sustainability Officers',
             'Compliance Managers',
+            'Fundraisers',
             'General and Operations Managers',
+            'Human Resources Managers',
+            'Human Resources Specialists',
             'Investment Fund Managers',
-            'Loss Prevention Managers'
+            'Loss Prevention Managers',
+            'Management Analysts',
+            'Meeting, Convention, and Event Planners',
+            'Operations Research Analysts',
+            'Personal Service Managers',
+            'Purchasing Managers',
+            'Security Management Specialists',
+            'Security Managers',
+            'Supply Chain Managers',
+            'Sustainability Specialists'
           ]
         }
       ],
