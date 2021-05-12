@@ -154,7 +154,7 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '10/3/2021 (2144)',
+          updated: '9/5/2021 (2294)',
           position: [
             'overview',
             'education',
@@ -165,7 +165,8 @@ export default {
             'Food',
             'Natural resources',
             'Plant',
-            'Power, Structural, Technical'
+            'Power, Structural, Technical',
+            'Smart Farm'
           ]
         },
         {
@@ -364,7 +365,7 @@ export default {
           active: false,
           disabled: false,
           soft_skill: true,
-          updated: '1/5/2021 (3407)',
+          updated: '10/5/2021 (3827)',
           position: [
             'overview',
             'education',
@@ -387,7 +388,9 @@ export default {
             'Sales Engineers',
             'Sales Managers',
             'Securities and Commodities Sales Agents',
-            'Telemarketers'
+            'Telemarketers',
+            'Digital Marketing',
+            'Smart SME'
           ]
         },
         {
